@@ -26,7 +26,7 @@ header{
 /************* NAV *****************/
 nav {
     opacity: 0;
-    animation: fadeLeft ease 2s forwards;
+    animation: fadeDown ease 2s forwards;
     position: relative;
     z-index: 1000;
 }
