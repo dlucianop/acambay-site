@@ -1,0 +1,23 @@
+{
+  "name": "acambay-site",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/dlucianop/acambay-site#readme",
+  "bugs": {
+    "url": "https://github.com/dlucianop/acambay-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlucianop/acambay-site.git"
+  },
+  "license": "ISC",
+  "author": "dlucianop",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
