@@ -29,7 +29,7 @@ nav > ul {
     align-items: center;
     padding: 0 2rem;
     margin: 0;
-    background: linear-gradient(to right, #93bb20, #54ad2d, #219e38, #12923b, #01843e);
+    background: linear-gradient(to right, #93bb20, #219e38,  #01843e,#219e38,#93bb20);
     background-size: 200% 200%; 
     animation: waveEffect 5s ease-in-out infinite;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -37,16 +37,30 @@ nav > ul {
 
 nav > ul li {
     font-size: large;
-    color: white;
+    display: flex;
     padding: 0.5rem 1rem;
     position: relative;
+    align-items: center;
     transition: color 0.3s ease, transform 0.3s ease;
+    justify-content: space-between;
+}
+
+nav > ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 nav > ul li:hover {
-    color: #a81733;
+    color: white;
     transform: scale(1.1);
     cursor: pointer;
+    background: #a81733;
+}
+
+.nav-arrow{
+    height: 20px;
+    width: 20px;
+    rotate: 90deg;
 }
 
 nav > ul li ul {
@@ -69,7 +83,7 @@ nav > ul li ul li {
 }
 
 nav > ul li ul li:hover {
-    border-left: 10px solid #a81733;
+    border-left: 8px solid #a81733;
     background: #a1bc31;
 }
 
@@ -87,6 +101,12 @@ nav > ul li:hover ul {
     100% {
       background-position: 0% 50%;
     }
+}
+
+.selected-page{
+    color: white;
+    background: #a1bc31;
+    pointer-events: none;
 }
 
 /************** CONTENT CONTAINER *******************/
