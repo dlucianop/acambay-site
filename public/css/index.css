@@ -113,6 +113,47 @@ nav > ul li:hover ul {
     min-height: 60vh;
 }
 
+/************** SOCIAL MEDIA *******************/
+.social-buttons {
+    z-index: 900;
+    opacity: 0;
+    animation: fadeRight ease 2s forwards;
+    position: fixed;
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to right,#c51348, #940b3c, #c51348);
+    background-size: 200% 200%; 
+    animation: waveEffect 5s ease-in-out infinite;
+    border-radius: 5px 0 0 5px;
+    transition: background-color 0.3s;
+    transform: translateX(10vh)
+}
+
+.social-buttons a img{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.social-buttons a:hover {
+    transition: background-color 0.3s, transform 0.5s;
+    color: white;
+    transform: translateX(0vh);
+}
+
 /****************** FOOTER ********************************/
 footer{
     opacity: 0;
@@ -122,7 +163,6 @@ footer{
     background-size: 200% 200%; 
     animation: waveEffect 5s ease-in-out infinite, fadeDown ease 2s forwards;
 }
-
 
 #footer-data > div{
     display: flex;
@@ -212,8 +252,8 @@ footer{
     to { opacity: 1; transform: translateY(0)}
 }
 
-@keyframes fadeLeft {
-    from { opacity: 0; transform: translateX(-100%)}
+@keyframes fadeRight {
+    from { opacity: 0; transform: translateX(100%)}
     to { opacity: 1; transform: translateX(0)}
 }
 
