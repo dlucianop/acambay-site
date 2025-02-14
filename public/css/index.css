@@ -1,3 +1,95 @@
-h1{
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
 }
+/********** HEADER *****************/
+header{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img{
+    width: auto;
+    height: 100%;
+}
+
+/************* NAV *****************/
+nav {
+    position: relative;
+    z-index: 1000;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0;
+    background: linear-gradient(to right, #93bb20, #54ad2d, #219e38, #12923b, #01843e);
+    background-size: 200% 200%; 
+    animation: waveEffect 5s ease-in-out infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav > ul li {
+    font-size: large;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav > ul li:hover {
+    color: #a81733;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+nav > ul li ul {
+    list-style: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    display: none;
+    width: 150%;
+    background: linear-gradient(to right, #93bb20, #54ad2d, #219e38, #12923b, #01843e);
+    background-size: 200% 200%; 
+    animation: waveEffect 5s ease-in-out infinite;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav > ul li ul li {
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+nav > ul li ul li:hover {
+    border-left: 10px solid #a81733;
+    background: #a1bc31;
+}
+
+nav > ul li:hover ul {
+    display: block;
+}
+
+@keyframes waveEffect {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+/************** CONTENT CONTAINER *******************/
+
+
+/****************** FOOTER ********************************/
